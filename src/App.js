@@ -25,6 +25,7 @@ import {
             progress={progress}
           />
           <Routes>
+            <Route exact path="/" element={ <News setProgress={setProgress} key='general' pageSize={pageSize} country="in" category="general" />}> </Route>
             <Route exact path="/general" element={ <News setProgress={setProgress} key='general' pageSize={pageSize} country="in" category="general" />}> </Route>
             <Route exact path="/business" element={ <News setProgress={setProgress} key='business' pageSize={pageSize} country="in" category="business" />} ></Route>
             <Route exact path="/health" element={ <News setProgress={setProgress} key='health' pageSize={pageSize} country="in" category="health" />}> </Route>
